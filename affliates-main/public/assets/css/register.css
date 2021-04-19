@@ -1,0 +1,178 @@
+/* Import fonts From Google */
+@import url("https://fonts.googleapis.com/css?family=Lato|Proza+Libre:400,700i&display=swap");
+
+/* General Css */
+:root {
+  /* --main-color: #003d8f; */
+  --main-color:#10163a;
+
+  /* --secondary-color: #0b9dcc; */
+  --secondary-color:#00a5d4;
+  --secondary-color2: #00a5d4;
+  --heading-color: #001b41;
+  --para-color: #777777;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  background-image: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+  margin: 0 0 20px !important;
+}
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+    color: var(--secondary-color);
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+  text-decoration: underline;
+}
+button:focus {
+  outline: none !important;
+}
+img,
+svg {
+  vertical-align: middle;
+}
+/* *********************** Register Css *************************** */
+.register-page{
+    padding: 2.5em 0;
+}
+
+.form-container{
+    max-width: 740px;
+    color: black;
+    margin: 0 auto;
+    background: #ffffff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    box-shadow: 9px 20px 55px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 8px 20px 53px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 8px 20px 53px 0 rgba(0, 0, 0, 0.4);
+}
+.main-title {
+    font-family: "Proza Libre", sans-serif !important;
+    text-align: center;
+    color: var(--secondary-color);
+    font-style: italic;
+    padding-top: 2em;
+  }
+  .main-title h1{
+      margin-bottom: 0 !important;
+  }
+.inner-form-container{
+    width: 100%;
+    padding: 2em;
+    background-color: #fff;
+    margin: 0;
+}
+
+.container .form-container .inner-form-container .form-control{
+    border: 1px solid #d1d1d1;
+    color: #212529;
+
+}
+.form-container .inner-form-container .form-control {
+    border: 1px solid #d1d1d1;
+    padding: 14px 27px 14px 13px;
+    color: #212529;
+    border-radius: 0;
+    height: 40px;
+    -webkit-box-shadow: 2px 5px 14px 1px #ccc;
+    box-shadow: 2px 5px 14px 1px #ccc;
+}
+.form-group{
+    padding-left: 0 !important;
+}
+.form-container .inner-form-container .full-name input, .form-container .inner-form-container .username input, .form-container .inner-form-container .sponsor input {
+    background-image: url(../img/icons/user-icon.png);
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+.form-container .inner-form-container .password input{
+    background-image: url(../img/icons/password-icon.png);
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+.form-container .inner-form-container .email input{
+    background-image: url(../img/icons/email-icon.png);
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+.form-container .inner-form-container .spn-h3{
+    color: var(--secondary-color);
+    text-align: left;
+    font-style: italic;
+    font-family: "Proza Libre", sans-serif !important;
+}
+.terms-conditions {
+    color: #999;
+    padding-top: 0.32em;
+    padding-bottom: 1.25em;
+}
+.terms-conditions .link a{
+    color: var(--main-color);
+    font-size:  1rem;
+}
+
+.register-button .btn {
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+    padding: 0.9em 5.31em;
+    font-weight: 700;
+    border-radius: 0;
+    text-transform: uppercase;
+    border: 1px solid var(--secondary-color);
+}
+.register-button .btn:hover{
+    background-color: var(--secondary-color2);
+}
+.reCaptcha > div > div {
+    margin: 0 auto 10px auto;
+}
+
+/* ******************** Loader Css Started ******************** */
+
+/* ******************** Loader Css Ended ******************** */
+/* Reponsive Css */
+
+@media (min-width:768px){
+    .container .form-container .inner-form-container .username,
+    .container .form-container .inner-form-container .email{
+    padding-right: 1.25em;
+}
+}

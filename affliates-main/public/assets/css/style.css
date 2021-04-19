@@ -1,0 +1,309 @@
+/* General Css */
+@import url("general.css");
+/* Header Css */
+@import url("header.css");
+
+
+/* slider Css */
+.site-slider {
+    position: relative;
+}
+
+.position-top {
+    position: absolute;
+    top: 50%;
+}
+
+.site-slider .slider-one img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next {
+    background-color: var(--secondary-color);
+    padding: 1em 1.5em;
+    border-radius: 10em;
+    color: white;
+    margin: 0 1em;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next {
+    opacity: 1;
+}
+
+.right-0 {
+    right: 0;
+}
+
+/* Slick Dots */
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+}
+
+.slick-dots li {
+    margin: 0 0.6em;
+}
+
+.slick-dots button {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    padding: 0;
+    border: none !important;
+    background-color: var(--secondary-color);
+    text-indent: -99999px;
+    border-radius: 100%;
+}
+
+.slick-dots li.slick-active button {
+    transform: scale(1.5);
+}
+
+.slick-dots li button:focus {
+    outline: none !important;
+}
+
+.works__section {
+    padding: 4rem 0;
+    background-color: whitesmoke;
+}
+.about_us {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.work-cards {
+    padding-top: 20px;
+}
+
+.im-link, .product_btn {
+    background: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 25px;
+    display: inline-block;
+    margin-top: 45px;
+    -webkit-box-shadow: 0px 11px 9px 0px rgb(69 13 4 / 7%);
+    box-shadow: 0px 11px 9px 0px rgb(69 13 4 / 7%);
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.work-cards .card {
+    text-align: center;
+    padding: 24px 30px;
+    border: 0;
+}
+
+.work-cards .card:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.work-cards .card:hover i {
+    color: white;
+}
+
+.work-cards .card:hover .card-body a.btn-learn {
+    background-color: white;
+    color: black;
+}
+
+.work-cards .card i {
+    font-size: 65px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.plan-section{
+    padding: 4rem 0;
+}
+
+.product-title{
+    font-size: 3rem;
+    color: #0c0b0f;
+}
+.active-color{
+    color: var(--secondary-color);
+}
+.plan-cards .card{
+    border: 2px solid rgba(0, 165, 212,.55);
+}
+
+.card-header{
+    display: block;
+    background: var(--secondary-color);
+    padding: 55px 0 50px;
+    text-align: center;
+    height: min-content;
+}
+
+.card-header .subtitle {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.card-header .title {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
+}
+
+.card-body ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card-info{
+    margin-bottom: 27px;
+    list-style: none;
+}
+
+.card-info li {
+    color: #333333;
+    padding-left: 20px;
+    position: relative;
+}
+
+.card-body ul li {
+    padding: 3px 10px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.choto {
+    font-size: 16px;
+}
+
+.sec-color {
+    border: 1px solid #ffcc00;
+    padding: 4px 10px;
+    border-radius: 7px;
+    color: #ffcc00;
+}
+
+.card-body .t-b-group {
+    padding: 40px 0;
+    text-align: left;
+    display: flex;
+}
+
+.card-body .t-b-group form:nth-child(1){
+    margin-right: 10px;
+}
+
+.custom-button{
+    background: #fff;
+    color: black;
+    border: 1px solid var(--secondary-color);
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 13px 18px !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.custom-button:nth-child(1){
+    margin-right: 10px;
+}
+
+.custom-button:hover {
+    background: var(--secondary-color);
+    color: #fff !important;
+    border-radius: 50px;
+}
+
+@media only screen and (min-width:576px) {
+    .signupmodal .modal-dialog {
+        max-width: 700px;
+    }
+
+    .card-header {
+        padding: 36px 15px;
+    }
+
+    h5 {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+
+    .card-info {
+        margin-bottom: 47px;
+    }
+
+    .card-info li {
+        font-size: 16px;
+        padding: 6px 0;
+        padding-left: 20px;
+    }
+
+    h5 {
+        font-size: 24px;
+        margin-top: -10px;
+
+    }
+}
+
+/* ******** Services Section Ended ************* */
+/* *********** Footer Started ******************** */
+.footer-wrap {
+    background: var(--main-color);
+    color: #fff;
+    border-top: 6px solid var(--secondary-color);
+}
+
+.footer-content {
+    padding: 2em 10px;
+    font-size: 1rem;
+}
+
+/* *********** Footer Ended ******************** */
+
+
+/* Login Page Css  */
+
+@media (max-width: 768px) {
+    .site-slider .slider-one img {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    .main-menu li a {
+        margin-bottom: .6em;
+    }
+
+    .site-slider .slider-btn .prev,
+    .site-slider .slider-btn .next {
+        padding: 0.5em 1em;
+    }
+}
+
+@media (min-width: 767px) {
+    .site-slider .slider-one img {
+        width: 100%;
+        max-height: 550px;
+    }
+}

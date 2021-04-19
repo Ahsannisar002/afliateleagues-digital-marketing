@@ -1,0 +1,81 @@
+/* General Css */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato|Proza+Libre:400,700i&display=swap");
+:root {
+    /* --main-color: #003d8f; */
+    --main-color:#10163a;
+
+    /* --secondary-color: #0b9dcc; */
+    --secondary-color:#00a5d4;
+    --secondary-color2: #00a5d4;
+    --heading-color: #001b41;
+    --para-color: #777777;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    width: 100%;
+    line-height: 1.5;
+    letter-spacing: .01rem;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    color: #626262;
+    background-image: none;
+    background-color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  header {
+    display: block !important;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin: 0 0 20px !important;
+    line-height: calc(1em + 8px);
+  }
+  fieldset,
+  form,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  input,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a,
+  a:focus,
+  a:hover {
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  button:focus {
+    outline: none !important;
+  }
+  img,
+  svg {
+    vertical-align: middle;
+  }

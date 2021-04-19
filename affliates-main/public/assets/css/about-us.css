@@ -1,0 +1,221 @@
+/* Import fonts From Google */
+@import url("https://fonts.googleapis.com/css?family=Lato|Proza+Libre:400,700i&display=swap");
+/* General Css */
+@import url("general.css");
+/* Header Css */
+@import url("header.css");
+/* Loader Css */
+@import url("loader.css");
+/* ********************* Main Page Css ***************************** */
+.about-us {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.about-us h3 {
+  color: var(--main-color);
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+.about-us p {
+  color: #555;
+  font-size: 1.125rem;
+  line-height: 1.62em;
+  margin: 0 0 1.87em;
+}
+.about-us a {
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 0.68em 1.56em;
+  display: inline-block;
+  font-size: 1.37rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 15px #ddd;
+  box-shadow: 0 0 15px #ddd;
+  margin-top: 1em;
+}
+.about-us a:hover {
+  color: var(--main-color);
+}
+.amw-a-spot-banner {
+  margin-bottom: 3.75em;
+  width: 100%;
+  margin-bottom: 0;
+  position: relative;
+}
+.amw-a-spot-banner__text-container {
+  width: 100%;
+  text-align: left;
+}
+.amw-a-spot-banner__content {
+  align-self: center;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  min-height: 100%;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 38%;
+}
+.amw-a-spot-banner--left-align .amw-a-spot-banner__content {
+  margin-left: 10%;
+}
+#ban-h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 36px;
+}
+/* ******** Services Section Started ************* */
+#services {
+  padding-top: 4em !important;
+  padding-bottom: 6em !important;
+}
+.services-title {
+  color: var(--main-color);
+  text-align: center;
+}
+.services-title h3 {
+  font-size: 2.25rem;
+}
+.services-div {
+  text-align: center;
+  background: #fff;
+  min-height: 290px;
+  border-left: 5px solid var(--secondary-color);
+  margin: 0 0 30px;
+  padding: 0 0.4em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  transition: transform 0.7s ease, -webkit-transform 0.7s ease;
+}
+.services-div h4 {
+  color: var(--main-color);
+  font-size: 23px;
+}
+.icon span {
+  width: 60px;
+  height: 60px;
+  background: var(--secondary-color);
+  display: inline-block;
+  padding: 0.92em 0;
+  border-radius: 45px;
+  text-align: center;
+  margin: 3em 0 2em 0;
+}
+.services-div .services-tag {
+  color: var(--para-color);
+  font-size: 1rem;
+  padding: 0.2em 0 1.5em 0;
+}
+/* ******** Services Section Ended ************* */
+/* Take Your Earning */
+.er-main {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 3em 1.3em;
+  color: #ffffff;
+}
+.er-main h1 {
+  margin-bottom: 0.6em;
+  font-weight: 700;
+}
+
+.er-main a {
+  color: var(--secondary-color);
+  background-color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.7em 1.4em;
+}
+.er-main a:hover {
+  color: var(--main-color);
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 15px #888;
+  box-shadow: 0 0 15px #888;
+}
+/* Take Your Earning Ended */
+
+/* *********** Footer Started ******************** */
+.footer-wrap {
+  background: var(--main-color);
+  color: #fff;
+  border-top: 6px solid var(--secondary-color);
+}
+.footer-content {
+  padding: 1.4em 10px;
+  font-size: 1rem;
+}
+/* *********** Footer Ended ******************** */
+
+/* ********************* Responsive ************************* */
+@media (max-width: 768px) {
+  .main-menu li a {
+    margin-bottom: 0.6em;
+  }
+  .amw-a-spot-banner {
+    margin-left: -15px;
+    width: calc(100% + 30px);
+  }
+  .amw-a-spot-banner__content {
+    text-align: center;
+    width: 100%;
+  }
+  .amw-a-spot-banner__content {
+    text-align: center;
+    width: 100%;
+  }
+  .amw-a-spot-banner--left-align .amw-a-spot-banner__content {
+    margin-left: 0;
+  }
+  .amw-a-spot-banner__text-container {
+    text-align: center;
+  }
+  .about-us a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 470px) {
+  .login-area,
+  .logo {
+    text-align: center;
+    float: none;
+  }
+}
+@media (min-width: 1px) {
+  .xss-width-100 {
+    width: 100% !important;
+  }
+  .xss-display-none {
+    display: none;
+  }
+  .xss-mb-20 {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .main-menu li a {
+    margin-left: 3em;
+  }
+}
+@media (min-width: 769px) {
+  .md-display-inline-block {
+    display: inline-block;
+  }
+  .md-display-none {
+    display: none;
+  }
+  .md-mb-15 {
+    margin-bottom: 15px;
+  }
+  .md-display-block {
+    display: block;
+  }
+  .md-mt-10 {
+    margin-top: 10px;
+  }
+}
